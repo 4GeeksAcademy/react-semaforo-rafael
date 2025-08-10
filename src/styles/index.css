@@ -9,3 +9,48 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.trafic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.support{
+    background-color: black;
+    width: 15px;
+    height: 100px;
+
+}
+.trafic-light {
+  background-color: black;
+  width: 100px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.light {
+  width: 60px;
+  height: 60px;
+  margin: 10px auto;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.glow {
+  box-shadow: 0 0 20px 10px white;
+}
+.button{
+  margin-top: 30px;
+  background-color: greenyellow;
+}
