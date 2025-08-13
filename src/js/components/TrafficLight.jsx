@@ -4,7 +4,7 @@ import React, {useState} from "react";
 
 // UTILIZO USESTATE PARA PODER MODIFICAR EL COLOR
 
-const Trafficlight = () => {
+const TrafficLight = () => {
 
 	const colors = ["red", "yellow", "green"];
 	const [color, setColor] = useState("red");
@@ -58,4 +58,4 @@ const Trafficlight = () => {
 	);
     }  
 
-    export default Trafficlight;
+    export default TrafficLight;
