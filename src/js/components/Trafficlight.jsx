@@ -1,11 +1,11 @@
-
 //create your first component
 
-import React, { useState } from "react";
+import React, {useState} from "react";
 
-const Home = () => {
-	
-	// UTILIZO USESTATE PARA PODER MODIFICAR EL COLOR
+// UTILIZO USESTATE PARA PODER MODIFICAR EL COLOR
+
+const Trafficlight = () => {
+
 	const colors = ["red", "yellow", "green"];
 	const [color, setColor] = useState("red");
 
@@ -18,18 +18,14 @@ const Home = () => {
 				break;
 			}
 		}
-
 		// CALCULO EL SGTE COLOR
 		let nextIndex = currentIndex + 1;
 		if (nextIndex >= colors.length) {
 		nextIndex = 0; 
 		}
-
 		// CAMBIARE EL COLOR
-
 		setColor(colors[nextIndex]);
 	};
-
 	// VOY A GUARDAR LAS VARIABLES DE CADA LUZ. 
 
 	let redClass = "light red";
@@ -46,7 +42,6 @@ const Home = () => {
 	if (color === "green") {
 		greenClass += " glow";
 	}
-
 	return (
 		<div className="trafic-container">
 			<div className="support"></div>
@@ -61,6 +56,6 @@ const Home = () => {
 			</button>
 		</div>
 	);
-};
+    }  
 
-export default Home;
+    export default Trafficlight;
